@@ -1,0 +1,16 @@
+{
+    "name": "asa/php-reflection",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Asa Abbad",
+            "email": "asa0abbad@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
