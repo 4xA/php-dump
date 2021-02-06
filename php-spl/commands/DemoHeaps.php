@@ -5,6 +5,7 @@ namespace Commands;
 use App\AbstractCommand;
 use App\DataStructure\MaxPriorityHeap;
 use App\PriorityVector;
+use SplPriorityQueue;
 
 /**
  * Heaps are a good datastructure for when you need to access the max/min value
@@ -27,6 +28,20 @@ class DemoHeaps extends AbstractCommand
             echo <<<EOT
                 Job: {$priorityVector->getValue()}
                 Priority: {$priorityVector->getPriority()}
+                \n
+                EOT;
+        }
+
+        $pq = new SplPriorityQueue();
+
+        $pq->insert('warning', 8);
+        $pq->insert('error', 10);
+        $pq->insert('debug', 5);
+        $pq->insert('info', 1);
+
+        while (!$pq->isEmpty()) {
+            echo <<<EOT
+                item: {$pq->extract()}
                 \n
                 EOT;
         }
