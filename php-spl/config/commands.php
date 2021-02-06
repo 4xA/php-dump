@@ -1,5 +1,6 @@
 <?php
 
+use Commands\DemoHeaps;
 use Commands\DumpFileContents;
 use Commands\PrintCSV;
 use Commands\ListFiles;
@@ -14,4 +15,5 @@ return [
     'ListFilesDetails' => ListFilesDetails::class,
     'ListFilesByPattern' => ListFilesByPattern::class,
     'ListFilesByRegex' => ListFilesByRegex::class,
+    'DemoHeaps' => DemoHeaps::class,
 ];
