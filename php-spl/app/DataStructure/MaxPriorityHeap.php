@@ -2,9 +2,9 @@
 
 namespace App\DataStructure;
 
-use SplMaxHeap;
+use SplHeap;
 
-class MaxPriorityHeap extends SplMaxHeap
+class MaxPriorityHeap extends SplHeap
 {
     /**
      * comparator in MaxHeap datastructure
