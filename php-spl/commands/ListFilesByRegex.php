@@ -7,6 +7,9 @@ use FilesystemIterator;
 use InvalidArgumentException;
 use RegexIterator;
 
+/**
+ * A command for filtering files in a path by a regix expression
+ */
 class ListFilesByRegex extends AbstractCommand
 {
     public function execute()
